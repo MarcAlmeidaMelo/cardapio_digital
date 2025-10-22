@@ -1,8 +1,7 @@
-import React from "react";
 import "./App.css";
-import imgRestaurante from "./assets/hashtaurante.webp";
 import Categorias from "./components/Categorias.jsx";
-import Card from "./components/Card.jsx";
+import Cards from "./components/Cards.jsx";
+import Banner from "./components/Banner.jsx"
 
 function App() {
 
@@ -10,26 +9,12 @@ function App() {
 
     <div className="container">
 
-      <div className="banner">
-        
-        <img src={imgRestaurante} alt="banner restaurante"></img>
-
-      </div> 
+      <Banner/>
 
       <Categorias/>
 
-      <div className="cards">
+      <Cards/>
 
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-          
-      </div>
-
-      
     </div>
 
  );
